@@ -352,9 +352,10 @@ int NoinHDF5_set_Attr(NoinHDF5_Attribute *attr) {
 			fprintf(stderr, "%s\t" CRED "Data" CBLUE "[%s]: " CWHITE, indent, &NoinHDF5_TYPE_STRING[attr->type_num * NoinHDF5_TypeStrLen]);
 			print_type_ptr[attr->type_num](attr->data);
 			fprintf(stderr, "\n");
-#endif
+
 //			free(attr->data);
 			}
+#endif
 		}
 	}
 #ifdef NoinHDF5_DEBUG
